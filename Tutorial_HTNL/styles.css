@@ -1,0 +1,85 @@
+body{
+    height: 50px;
+}
+#logo{
+    width: 200px;
+    height: 100px;
+}
+table{
+    display: none;
+    border: 2px;
+    border-style: groove;
+    font-size: 50px;
+    position: relative;
+    width:100%
+}
+h1{
+    font-size: 80px;
+    align-content: center;
+    text-align: center;
+}
+h2{ 
+    display: none;
+    font-size: 50px;
+    color: blue;
+}
+nav {
+    background-color: #333;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #111;
+}
+footer
+{
+    background-color: darkgray;
+    text-align: center;
+    color:white;
+    width: 100%;
+}
+
+
+/* Menú lateral */
+.sidebar {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ddd;
+}
+#fondo
+{
+        
+    width: 80%;
+}
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner de Imágenes</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .slider {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 500%;
+        }
+
+        .slides img {
+            width: 100%;
+            border: 0;
+        }
+
+        .slider input {
+            display: none;
+        }
+
+        .navigation-manual {
+            position: absolute;
+            width: 100%;
+            margin-top: -40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .manual-btn {
+            border: 2px solid #ffffff;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.4s;
+        }
+
+        .manual-btn:not(:last-child) {
+            margin-right: 40px;
+        }
+
+        .manual-btn:hover {
+            background: #ffffff;
+        }
+
+        #radio1:checked ~ .first {
+            transform: translateX(0);
+        }
+
+        #radio2:checked ~ .first {
+            transform: translateX(-20%);
+        }
+
+        #radio3:checked ~ .first {
+            transform: translateX(-40%);
+        }
+
+        #radio4:checked ~ .first {
+            transform: translateX(-60%);
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1" checked>
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide first">
+                <img src="https://via.placeholder.com/800x300?text=Imagen+1" alt="Imagen 1">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/800x300?text=Imagen+2" alt="Imagen 2">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/800x300?text=Imagen+3" alt="Imagen 3">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/800x300?text=Imagen+4" alt="Imagen 4">
+            </div>
+
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

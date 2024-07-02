@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Número</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Menú horizontal -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#game">Juego</a></li>
+            <li><a href="#about">Acerca de</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Menú lateral -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#game">Juego</a></li>
+                <li><a href="#about">Acerca de</a></li>
+            </ul>
+        </aside>
+        
+        <!-- Contenido principal -->
+        <main class="content">
+            <section id="home">
+                <h1>Bienvenido al Juego Adivina el Número</h1>
+                <p>Estoy pensando en un número entre 1 y 100. ¿Puedes adivinarlo?</p>
+            </section>
+            <section id="game">
+                <h1>Adivina el Número</h1>
+                <input type="number" id="guess" min="1" max="100" placeholder="Introduce tu número">
+                <button id="submit">Adivina</button>
+                <p id="result"></p>
+                <p id="attempts"></p>
+            </section>
+            <section id="about">
+                <h1>Acerca de</h1>
+                <p>Este es un simple juego de adivinanza creado para demostrar cómo se puede usar HTML, CSS y JavaScript juntos.</p>
+            </section>
+        </main>
+    </div>
+    
+</body>
+</html>
